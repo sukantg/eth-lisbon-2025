@@ -1,0 +1,14 @@
+name: auditagent
+author: sukantg
+version: 0.1.0
+type: custom
+description: Tool description
+license: Apache-2.0
+aea_version: '>=1.0.0, <2.0.0'
+fingerprint:
+  __init__.py: bafybeifnxrgw2zpkemhvnbxjkqg4sze2tg3qpmnqmqlhdgixbtmegwzox4
+  auditagent.py: bafybeia2e52kx7sxxu52zbvgok6nzhxduru5wn3kjcuwdabz7oxi4nmvg4
+fingerprint_ignore_patterns: []
+entry_point: auditagent.py
+callable: run
+dependencies: {}
