@@ -7,7 +7,8 @@ license: Apache-2.0
 aea_version: '>=1.0.0, <2.0.0'
 fingerprint:
   __init__.py: bafybeifnxrgw2zpkemhvnbxjkqg4sze2tg3qpmnqmqlhdgixbtmegwzox4
-  auditagent.py: bafybeia2e52kx7sxxu52zbvgok6nzhxduru5wn3kjcuwdabz7oxi4nmvg4
+  auditagent.py: bafybeidldmesl6da5ghbzomsn52tuafyg4ymatzfg6muwyq7qqj7j7oewi
+  contract.sol: bafybeibchfs35uloo5j2cx3ztilpweuxmlpbmy4kd5o7piwcrazt6mikfm
 fingerprint_ignore_patterns: []
 entry_point: auditagent.py
 callable: run
