@@ -1,51 +1,34 @@
-<p align="center">
-   <img src="./docs/images/mechs-logo.png" width=300>
-</p>
+# First Audit – Autonomous Smart Contract Auditor
 
-<h1 align="center" style="margin-bottom: 0;">
-    Mech Tools Dev
-    <br>
-    <a href="https://github.com/valory-xyz/mech-tools-dev/blob/main/LICENSE">
-        <img alt="License: Apache-2.0" src="https://img.shields.io/github/license/valory-xyz/mech-tools-dev">
-    </a>
-    <a href="https://github.com/valory-xyz/mech/releases/tag/v0.10.0">
-        <img alt="Mech Core: Mech 0.10.0" src="https://img.shields.io/badge/Mech%20Core%20-0.10.0-blueviolet">
-    </a>
-</h1>
+First Audit is an AI-powered Mech tool built to perform autonomous security audits on Solidity smart contracts. Leveraging OpenAI's GPT models, it analyzes contract code, detects vulnerabilities, suggests gas optimizations, and outputs a comprehensive Markdown-formatted audit report.
 
-Development toolkit for the Mech ecosystem. 
-Provides the mech core logic, supporting easy tools integration, streamlining their development and testing.
+---
 
-## Requirements
+## Features
 
-You need the following requirements installed in your system:
+- **Vulnerability Detection** – Identifies common attack vectors (reentrancy, tx.origin, unsafe delegatecall, etc.)
+- **Gas Optimization Tips** – Offers suggestions to reduce gas consumption
+- **Best Practices Review** – Highlights deviations from Solidity security standards
+- **Powered by OpenAI** – Uses GPT-4o for natural language contract analysis
+- **Markdown Audit Reports** – Outputs readable reports with recommendations
+- **Mech Compatible** – Built to run as a Valory Mech tool or agent
 
-- [Python](https://www.python.org/) (recommended `3.10`)
-- [Poetry](https://python-poetry.org/docs/)
-- [Docker Engine](https://docs.docker.com/engine/install/)
-- [Docker Compose](https://docs.docker.com/compose/install/)
-- [Tendermint](https://docs.tendermint.com/v0.34/introduction/install.html) `==0.34.19`
+## Set Up Your Environment
 
-## Set up your environment
+Follow these instructions to prepare your local environment to run the demo below or build your own AI Mech.
 
-Follow these instructions to have your local environment prepared to run the demo below, as well as to build your own AI Mech.
+---
 
-1. Create a Poetry virtual environment and install the dependencies:
+### 1. Create a Poetry Virtual Environment and Install Dependencies
 
-    ```bash
-    poetry install && poetry shell
-    ```
+```bash
+poetry install && poetry shell
+```
 
-2. Fetch the software packages using the [Open Autonomy](https://docs.autonolas.network/open-autonomy/) CLI:
+### 2. Fetch Required Packages via Open Autonomy CLI
 
-    ```bash
-    autonomy packages sync --update-packages
-    ```
+Run the following command to download necessary packages from the remote registry:
 
-    This will populate the Open Autonomy [local registry](https://docs.autonolas.network/open-autonomy/guides/set_up/#the-registries-and-runtime-folders) (folder `./packages`) with the required components to run the worker services.
-
-## Instructions
-
-In order to develop your own mech, simply fork this repository and start adding your tools.
-You can find more information on how to create, publish, and run your own mech tools in 
-[our documentation](https://docs.olas.network/mech-tool/).
+```bash
+autonomy packages sync --update-packages
+```
